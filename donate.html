@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Donate</title>
+    <link rel="stylesheet" href="donate.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Courgette&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Courgette&family=Lobster&display=swap" rel="stylesheet"> 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Forum&display=swap" rel="stylesheet">  
+</head>
+<body>
+    <div class="frame">
+        <button class="btn1"><a href="/index.html"><span>Index</span></a></button>
+        <button class="btn1"><a href="/timeline.html"><span>Timeline</span></a></button>
+        <button class="btn1"><a href="/about.html"><span>About</span></a></button>
+        <button class="btn1"><a href="/contact.html"><span>Contact Me</span></a></button>
+        <button class="btn1"><a href="/donate.html"><span>Donate</span></a></button>
+    </div>
+    <div>
+        <h1>Empower Science</h1> <hr>
+        <h2>Donate</h2>
+    </div>
+    <div class="row">
+        <div class="column">
+            <p>Join as a Member</p>
+            <img src="/image/donation-right.svg" alt="Picture" id="Token">
+            <p>Become a monthly contributor and recieve a token of appreciation sent straight from Headquaters</p>
+            <div>
+                <button class="btn margin"><span>$10/Mo</span></button>
+                <button class="btn margin" ><span>$20/Mo</span></button><br>
+                <button class="btn margin"><span>$40/Mo</span></button>
+                <button class="btn margin"><span>100$/Mo</span></button>
+            </div>
+            <pre>                   <button class="btn2">donate</button></pre>
+
+        </div>
+        <div class="column">
+            <p>Make a one time gift</p>
+            <div>
+                <button class="btn"><span>$10/Mo</span></button>
+                <button class="btn"><span>$20/Mo</span></button>
+                <button class="btn"><span>$40/Mo</span></button><br>
+                <button class="btn"><span>100$/Mo</span></button>
+                <button class="btn"><span>$10/Mo</span></button>
+                <button class="btn"><span>$20/Mo</span></button>
+            </div>
+            <input type="text" placeholder="Name your own amount" id="Amount" size="50px" style="font-size: medium;"> <br>
+            <pre>                                <input type="checkbox" name="0" id="0" itemid="Checkbox"> <span style="font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">I'll cover my own transaction fees</span> <br></pre>
+            <pre>                            <button class="btn2">donate</button></pre>
+        </div>
+    </div> <hr>
+    <div class="main">
+
+        <h3>Click Counter</h3>
+        <button id="clickme">Click me: 0</button>
+        <script>
+            var button = document.getElementById("clickme"),
+            count = 0;
+            button.onclick = function() {
+            count += 1;
+            button.innerHTML = "Click me: " + count;
+          };
+        </script>
+    
+    </div>
+</body>
+</html>

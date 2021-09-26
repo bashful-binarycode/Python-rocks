@@ -1,0 +1,143 @@
+@font-face {
+    font-family: Avenir-Roman;
+    src: url(/avenir_ff/AvenirLTStd-Roman.otf);
+  }
+
+*{
+    padding: 0;
+    margin: 0px;
+}
+body{
+    background-image: linear-gradient(34deg, rgb(230, 211, 109), rgb(150, 150, 194), rgb(116, 185, 116));
+    background-size: cover;
+}
+  
+.frame{
+    background: #91c7b1;
+    padding: 30px;
+    padding-bottom: -15%;
+    text-align: center;
+    box-sizing: border-box;
+    display:flow-root;
+}
+
+.btn{
+    cursor: pointer;
+    width: 150px;
+    height: 40px;
+    color: rgb(255, 255, 255);
+    border-radius: 5px;
+    font-family: 'Lato', sans-serif;
+    font-size: 1.5em;
+    font-weight: 500;
+    background: transparent;
+    cursor: pointer;
+    transition: 0.3s ease;
+    position: relative;
+    display: inline-block;
+     box-shadow:inset 2px 2px 2px 0px rgba(255, 233, 233, 0.712),
+     7px 7px 20px 0px rgba(0,0,0,.1),
+     4px 4px 5px 0px rgba(0,0,0,.1);
+    outline: none;
+    line-height: 42px;
+    padding: 0;
+    margin-right: 1.5%;
+    margin-bottom: 2.5%;
+    border: none;
+    background: rgb(0, 0, 0);
+  background: linear-gradient(45deg, #cadb54 0%, #5fe276 100%);
+}
+
+.btn:hover {
+    color: #ffffffbd;
+    background: linear-gradient(45deg, rgba(101, 190, 212, 0.986) 20%, rgba(136, 149, 185, 0.959) 100%);
+     box-shadow:none;
+  }
+
+.btn:before,
+.btn:after{
+    content:'';
+    position:absolute;
+    top:0;
+    right:0;
+    height:2px;
+    width:0;
+    background: #e24ccec7;
+    box-shadow:
+     -1px -1px 5px 0px #fff,
+     7px 7px 20px 0px #0003,
+     4px 4px 5px 0px #0002;
+    transition:400ms ease all;
+}
+
+.btn:after{
+    right:inherit;
+    top:inherit;
+    left:0;
+    bottom:0;
+}
+
+.btn:hover:before,
+.btn:hover:after{
+    width:100%;
+    transition:800ms ease all;
+}
+
+
+.title2{
+    font-family: Avenir-Roman;
+    margin-left: 20px;
+    margin-right: 25px;
+    padding-bottom: 36px;
+    font-size: 35px;
+    text-align: center;
+    color: white;
+}
+
+
+
+a{
+    text-decoration: none;
+    color:white;
+}
+
+h1::before {  
+    transform: scaleX(0);
+    transform-origin: bottom right;
+    content: " ";
+    display: block;
+    position: absolute;
+    top: 0; right: 0; bottom: 0; left: 0;
+    inset: 0 0 0 0;
+    background: rgba(69, 70, 67, 0.733);
+    z-index: -1;
+    transition: transform .3s ease;
+  }
+  
+  h1:hover::before {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+  }
+  
+  h1{
+    position: relative;
+    font-size: 5rem;
+    font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: white;
+    text-align: center;
+  }
+  
+  .title{
+    margin: 0 0 0.5em;
+    text-transform: uppercase;
+    font-weight: 900;
+    font-style: italic;
+    font-size: 3rem;
+    color: #eee;
+    line-height: 0.8;
+    margin: 0;
+    text-align-last: center;
+  }
+  
+
+  
